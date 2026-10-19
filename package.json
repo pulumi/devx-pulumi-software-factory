@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": { "test": "vitest run", "orchestrate": "tsx scripts/orchestrate.ts" },
-  "dependencies": { "@pulumi/pulumi": "^3.140.0" },
-  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "vitest": "^2.1.0", "@types/node": "^20.0.0" }
+  "dependencies": { "@pulumi/pulumi": "^3.270.0" },
+  "devDependencies": { "tsx": "^4.19.0", "typescript": "^5.6.0", "vitest": "^5.0.5", "@types/node": "^20.0.0" }
 }
