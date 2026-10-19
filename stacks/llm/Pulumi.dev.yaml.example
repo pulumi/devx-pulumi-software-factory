@@ -1,0 +1,18 @@
+# Copy to Pulumi.dev.yaml (git-ignored), or set the same keys with `pulumi config set`.
+config:
+  aws:region: us-east-1
+  # Tag every resource with an owner so shared-account cleanup jobs leave it alone.
+  aws:defaultTags:
+    tags:
+      Owner: you@example.com
+  llm:owner: you@example.com
+  llm:clusterName: software-factory
+  llm:instanceType: g6.2xlarge      # one NVIDIA L4 GPU per node
+  llm:nodeCount: "2"
+  llm:model: Qwen/Qwen3-8B
+  llm:modelReplicas: "2"
+  llm:toolCallParser: hermes
+  llm:reasoningParser: qwen3
+  llm:maxModelLen: "16384"
+  llm:validate: "false"             # skip the AICR conformance validation run
+  # llm:hfToken: set with: pulumi config set --secret hfToken <token>   (only needed for gated models)

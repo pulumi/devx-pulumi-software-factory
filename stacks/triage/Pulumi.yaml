@@ -1,0 +1,4 @@
+name: triage
+runtime:
+  name: nodejs
+description: Jev-backed issue triage (independent stack). Evaluator pod in agent-platform, DynamoDB audit trail in AWS via IRSA.

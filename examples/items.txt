@@ -1,0 +1,6 @@
+Persist chat history so a user who rejoins a session sees the last 50 messages
+Show the list of users currently connected to the session
+Reconnect the websocket automatically with exponential backoff after a dropped connection
+Display who is online in the current session
+Add a blockchain-based payment system for premium accounts
+Improve the chat

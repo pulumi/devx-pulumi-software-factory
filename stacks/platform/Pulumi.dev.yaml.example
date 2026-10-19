@@ -1,0 +1,6 @@
+config:
+  platform:llmStack: my-org/llm/dev        # <org>/<project>/<stack> of the llm stack
+  platform:owner: you@example.com
+  # The one-sentence brief the agents work from. Set it from a file:
+  #   pulumi config set projectBrief < factory-prompt.md
+  platform:projectBrief: Build a simple web instant messenger application in Vite and Node.JS that allows a team to send messages to each other in a session using websockets.

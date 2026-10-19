@@ -1,0 +1,4 @@
+name: factory
+runtime:
+  name: nodejs
+description: Mastra Factory (self-hosted) with Postgres+pgvector, deployed into the agent-platform namespace.

@@ -1,0 +1,4 @@
+name: agent
+runtime:
+  name: nodejs
+description: Mastra factory-coder agent pod, model served by the in-cluster llm endpoint.

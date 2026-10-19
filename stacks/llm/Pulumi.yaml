@@ -1,0 +1,7 @@
+name: llm
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+description: OpenAI-compatible LLM endpoint on EKS (2x L4, NVIDIA Dynamo via AICR). ~$2.2/hr up; destroy when done.

@@ -1,0 +1,4 @@
+name: platform
+runtime:
+  name: nodejs
+description: Parent/umbrella stack - owns the agent-platform namespace, policy and shared config for the agent-factory children.

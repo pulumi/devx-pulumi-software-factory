@@ -1,0 +1,7 @@
+config:
+  agent:platformStack: my-org/platform/dev
+  agent:owner: you@example.com
+  aws:region: us-east-1
+  aws:defaultTags:
+    tags:
+      Owner: you@example.com

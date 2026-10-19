@@ -1,0 +1,10 @@
+config:
+  factory:platformStack: my-org/platform/dev
+  factory:owner: you@example.com
+  aws:region: us-east-1
+  aws:defaultTags:
+    tags:
+      Owner: you@example.com
+  # Optional GitHub intake (see tools/github-app). Absent means no GitHub integration:
+  #   factory:githubAppId, githubAppSlug, githubAppClientId
+  #   factory:githubAppClientSecret, githubAppWebhookSecret, githubAppPrivateKey   (pulumi config set --secret)

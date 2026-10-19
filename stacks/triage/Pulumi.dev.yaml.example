@@ -1,0 +1,10 @@
+config:
+  triage:platformStack: my-org/platform/dev
+  triage:llmStack: my-org/llm/dev
+  triage:owner: you@example.com
+  aws:region: us-east-1
+  aws:defaultTags:
+    tags:
+      Owner: you@example.com
+  # Secret: pulumi config set --secret jevApiKey <key>
+  # Optional: triage:jevEndpoint, acceptThreshold, rejectThreshold, wipLimit, intervalSeconds, dryRun

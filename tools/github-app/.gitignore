@@ -1,0 +1,4 @@
+.github-app.json
+shots/
+*.webm
+node_modules/
