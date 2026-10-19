@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# One-time local setup: Python venv, the AICR SDK from the sibling checkout, and
+# One-time local setup: Python venv, the AICR SDK from a local checkout of
+# https://github.com/pulumi/pulumi-nvidia-aicr (git clone it), and
 # the locally built provider plugin. Needed until provider 0.4.0 is published;
 # after that, requirements.txt can pin the PyPI package and this script only
 # needs to create the venv.

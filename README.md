@@ -34,7 +34,7 @@ The `llm` stack dominates: about **$2.2 per hour** while up (two L4 GPU nodes, a
 - Node.js 20+ (22 recommended), Python 3.12, Docker, `kubectl`, `helm`, `aws`
 - A Hugging Face token only if you swap in a gated model
 - A [Jev](https://docs.typesafe.ai) API key for the triage stack (Jev is early access)
-- The `pulumi-nvidia-aicr` provider. `stacks/llm/setup.sh` installs the Python SDK and plugin from a checkout (`PROVIDER_REPO=<path>`); once a release is published you can pin the package in `requirements.txt` instead.
+- The [`pulumi-nvidia-aicr`](https://github.com/pulumi/pulumi-nvidia-aicr) provider, cloned and built locally: `git clone https://github.com/pulumi/pulumi-nvidia-aicr && make -C pulumi-nvidia-aicr provider`. This example targets the 0.4.x line, which is not on PyPI yet, so `stacks/llm/setup.sh` installs the Python SDK and plugin from that checkout (`PROVIDER_REPO=<path to the clone> stacks/llm/setup.sh`). Once 0.4.0 is released you can pin the package in `requirements.txt` instead.
 
 Run `scripts/preflight.sh` for a read-only check of your tools and AWS quota.
 
@@ -106,3 +106,7 @@ npm test                          # 90 tests: orchestration, bootstrap, compat c
 - Everything is tagged with your `owner` value. In shared AWS accounts, cleanup jobs often delete untagged resources.
 
 `apps/factory` is generated from [`npm create factory`](https://www.npmjs.com/package/create-factory); see its own README for Factory configuration.
+
+## License
+
+Apache 2.0. See [LICENSE](LICENSE). `apps/factory` is generated from `npm create factory`, and its skill files under `apps/factory/.agents` come from Mastra; they keep their own terms.

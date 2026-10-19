@@ -14,9 +14,6 @@ Date 2026-10-09. Real calls: Jev (`api.typesafe.ai`, `jev-latest`) and the deplo
 ## Final applied run (`--apply`, thresholds accept 0.7 / reject 0.8)
 Resulting Factory stages: feature -> `planning`, bug -> `planning`, duplicate -> `canceled` (metadata reason `duplicate`), payroll -> `canceled` (`out_of_scope`), vague -> stays in `intake` with `metadata.triage.needsHuman=true`. No errors, and a repeat pass touched only the 3 items that were still in intake.
 
-## Measured latency
-Jev call latency over ~25 live calls: 74-307 ms (median roughly 100 ms). This is our own measurement from a laptop through the internet to `api.typesafe.ai`, not the vendor figure.
-
 ## What changed because of this evidence
 1. Context now includes titles of OTHER open issues (Jev cannot see duplicates otherwise).
 2. Duplicates are judged only against EARLIER work (created before the issue, or already past intake). Without this, two copies each flagged the other as a duplicate and neither was accepted.
